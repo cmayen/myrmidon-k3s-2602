@@ -29,6 +29,11 @@ spec:
     grafana:
       replicas: 1
       adminPassword: superduperpassword
+      sidecar:
+        dashboards:
+          enabled: false
+        datasources:
+          enabled: false
       # https://github.com/prometheus-community/helm-charts/issues/2710
       # hmmm
       #admin:
@@ -37,7 +42,10 @@ spec:
     prometheus:
       prometheusSpec:
         replicas: 1
+        configReloader:
+          enabled: false
     alertmanager:
       alertmanagerSpec:
         replicas: 1
-
+        configReloader:
+          enabled: false
