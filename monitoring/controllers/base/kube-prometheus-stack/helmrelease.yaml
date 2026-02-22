@@ -31,9 +31,9 @@ spec:
       adminPassword: superduperpassword
       sidecar:
         dashboards:
-          enabled: false
+          enabled: true
         datasources:
-          enabled: false
+          enabled: true
       # https://github.com/prometheus-community/helm-charts/issues/2710
       # hmmm
       #admin:
