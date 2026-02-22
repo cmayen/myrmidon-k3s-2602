@@ -27,11 +27,17 @@ spec:
           kind: PrometheusRule
   values:
     grafana:
+      replicas: 1
       adminPassword: superduperpassword
       # https://github.com/prometheus-community/helm-charts/issues/2710
       # hmmm
       #admin:
       #  existingSecret: grafana-admin-secret
       #  passwordKey: admin-password
-      
+    prometheus:
+      prometheusSpec:
+        replicas: 1
+    alertmanager:
+      alertmanagerSpec:
+        replicas: 1
 
