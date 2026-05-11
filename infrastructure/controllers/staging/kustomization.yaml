@@ -4,3 +4,4 @@ namespace: renovate
 resources:
   - renovate/
   - cert-manager/
+  - cert-issuers/
