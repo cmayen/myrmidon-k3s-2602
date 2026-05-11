@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:
     # Replace with your real email
-    email: yourname@example.com
+    email: cmayen@gmail.com
 
     # Production Let's Encrypt ACME endpoint
     server: https://acme-v02.api.letsencrypt.org/directory
